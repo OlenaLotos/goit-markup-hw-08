@@ -1,0 +1,24 @@
+.section {
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
+}
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.section-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+/* .activity .list {
+  display: flex;
+} */
+.section > .activity {
+  padding-bottom: 94px;
+}

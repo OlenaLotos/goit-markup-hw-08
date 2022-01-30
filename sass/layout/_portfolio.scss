@@ -1,0 +1,181 @@
+.button-list {
+  background-color: var(--bg-button-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  cursor: pointer;
+  transition: background-color var(--timing-function) var(--transition-duration),
+    color var(--timing-function) var(--transition-duration),
+    box-shadow var(--timing-function) var(--transition-duration);
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.button {
+  /* outline: solid teal; */
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.btn-portfolio:not(:last-child) {
+  margin-right: 8px;
+}
+/* .btn-portfolio {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+} */
+.cards-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3- 30px);
+}
+/* .item-wrap {
+  outline: solid 1px tomato;
+} */
+.section-portfolio {
+  margin-bottom: 94px;
+}
+.portfolio {
+  padding: 0px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+  /* flex-basis: calc(100% / 3- 30px); */
+}
+.item-portfolio {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.item-wrap {
+  width: 370px;
+  border-bottom: 1px solid var(--border-portfolio);
+  transition: box-shadow var(--timing-function) var(--transition-duration);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio-img-text-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-text-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform var(--timing-function) var(--transition-duration);
+  .item-portfolio:hover &,
+  .item-portfolio:focus & {
+    transform: translateY(0);
+  }
+}
+
+/* display: inline-block;
+   content: '';
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* .portfolio-img-text-thumb {
+  overflow: hidden;
+}
+
+.portfolio-img-text-thumb::before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+} */
+
+/* .portfolio-img-text-thumb:hover::before,
+.portfolio-img-text-thumb:focus::before {
+  opacity: 1;
+} */
+
+/* .item-wrap .portfolio-img-text-thumb::before {
+  opacity: 1;
+  transform: translateY(0);
+} */
+/* .portfolio-text-description::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+ 
+  color: var(--white-text-color);
+  top: 50%;
+  left: 50%;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  width: 322px;
+  height: 168px;
+} */
+/* .portfolio-text-description:hover::before,
+.portfolio-text-description:focus::before {
+  opacity: 1;
+}  */
+
+.portfolio-text-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 1px solid var(--border-portfolio);
+}
+.portfolio-image.no-gap {
+  display: block;
+}
+/* .item-portfolio:not(:last-child) {
+  margin-right: 30px;
+  outline: solid teal;
+}
+.item-portfolio:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
+} */

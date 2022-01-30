@@ -1,0 +1,28 @@
+* html {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+.ul,
+ol {
+  margin-left: 0px;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

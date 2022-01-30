@@ -1,0 +1,22 @@
+body {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.link {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+textarea {
+  outline: none;
+}
