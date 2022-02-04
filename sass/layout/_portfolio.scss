@@ -40,35 +40,49 @@
   padding-right: 22px;
   padding-left: 22px;
 } */
-.cards-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 3- 30px);
-}
-/* .item-wrap {
-  outline: solid 1px tomato;
-} */
+
 .section-portfolio {
-  margin-bottom: 94px;
+  // margin-bottom: 94px;
 }
+
+.cards-portfolio {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3- 30px);
+  }
+}
+
 .portfolio {
   padding: 0px;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  /* justify-content: space-between; */
-  /* flex-basis: calc(100% / 3- 30px); */
+  margin: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    /* justify-content: space-between; */
+  }
 }
+
 .item-portfolio {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .item-wrap {
-  width: 370px;
+  width: 100%;
   border-bottom: 1px solid var(--border-portfolio);
   transition: box-shadow var(--timing-function) var(--transition-duration);
   &:hover,
@@ -100,6 +114,17 @@
   .item-portfolio:focus & {
     transform: translateY(0);
   }
+}
+
+.portfolio-text-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 1px solid var(--border-portfolio);
+}
+.portfolio-image .no-gap {
+  display: block;
 }
 
 /* display: inline-block;
@@ -162,16 +187,6 @@
   opacity: 1;
 }  */
 
-.portfolio-text-wrap {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
-  border: 1px solid var(--border-portfolio);
-}
-.portfolio-image.no-gap {
-  display: block;
-}
 /* .item-portfolio:not(:last-child) {
   margin-right: 30px;
   outline: solid teal;

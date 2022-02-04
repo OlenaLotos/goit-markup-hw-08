@@ -14,68 +14,68 @@
 
 <body>
     
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="header container">
             <nav class="navigation">
                 <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
     
-                <button type="button" class="button-menu is-open">
+                <button type="button" class="menu-toggle js-open-menu">
                 <svg
                  width="40"
                   height="40"
                    aria-label="Переключатель мобильного меню"
                    aria-expanded="false" 
-                   aria-controls="menu-container">
+                   aria-controls="mobile-menu">
                     <use class="icon-menu" href="./images/icons.svg#icon-menu-mob"></use>
                     <use class="icon-close" href="./images/icons.svg#icon-close-mob"></use>
                 </svg>
                 </button>
 
-<div class="menu-container is-open" id="menu-container"></div>
+<div class="menu-container js-menu-container" id="mobile-menu"></div>
+    <ul class="site-nav list">
+    <li class="header-link"><a href="" class="nav-link link current">Студия</a></li>
+    <li class="header-link"> <a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
+    <li class="header-link"> <a href="" class="nav-link link">Контакты</a></li>
+</ul>
+</nav>
 
-                <ul class="site-nav list">
-                    <li class="header-link"><a href="" class="nav-link link current">Студия</a></li>
-                    <li class="header-link"> <a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
-                    <li class="header-link"> <a href="" class="nav-link link">Контакты</a></li>
-                </ul>
-            </nav>
-    
-            <div class="auth-nav-group">
-                <ul class="auth-nav list">
-                    <li class="header-link">
-    
-                        <a href="mailto:info@example.com" class="auth-nav mail">
-                            <svg class="email-icon" width="16" height="12">
-                                <use href="./images/icons.svg#icon-envelope">
-                                </use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-    
-                    <li class="tel:header-link"> <a href="" class="auth-nav phone">
-                            <svg class="smartphone-icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone">
-                                </use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
-            </div>
+<div class="auth-nav-group">
+    <ul class="auth-nav list">
+        <li class="header-link">
 
-            
-        </div>
-    </header>
+            <a href="mailto:info@example.com" class="auth-nav mail">
+                <svg class="email-icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-envelope">
+                    </use>
+                </svg>info@devstudio.com</a>
+        </li>
+
+        <li class="tel:header-link"> <a href="" class="auth-nav phone">
+                <svg class="smartphone-icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-smartphone">
+                    </use>
+                </svg>+38 096 111 11 11</a>
+        </li>
+    </ul>
+</div>
+ </div>
+    </header> -->
 
 <main>
 <!-- HERO -->
-    <section class="hero">
+
+
+    <!-- <section class="hero">
         <div class="hero__wrap container">
         <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button> 
    
             </div>  
-    </section>
+    </section> -->
         
 
     <!--Особливості-->
+
     <section class="section">
 <div class="features section__features container">
     <h2 class="feature__title--hidden visually-hidden">Преимущества</h2>
@@ -87,7 +87,7 @@
                     </svg>
                 </div>
                 <h3 class="features-description__title">Внимание к деталям</h3>
-            <p class="features-description__text">Идейные соображения, а также <br> начало повседневной работы по <br> формированию позиции.</p>
+            <p class="features-description__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
         <li class="features-description__item">
@@ -97,7 +97,7 @@
                 </svg>
             </div>
             <h3 class="features-description__title">Пунктуальность</h3>
-            <p class="features-description__text">Задача организации, в особенности <br> же рамки и место обучения кадров <br> влечет за собой.</p>
+            <p class="features-description__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
 
         <li class="features-description__item">
@@ -107,7 +107,7 @@
                 </svg>
             </div>
             <h3 class="features-description__title">Планирование</h3>
-            <p class="features-description__text">Равным образом консультация с <br> широким активом в значительной <br> степени обуславливает.</p>
+            <p class="features-description__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
         <li class="features-description__item">
             <div class="features-description__thumb">
@@ -116,13 +116,15 @@
                 </svg>
             </div>
             <h3 class="features-description__title">Современные технологии</h3>
-            <p class="features-description__text">Значимость этих проблем настолько <br> очевидна, что реализация плановых <br> заданий.</p>
+            <p class="features-description__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
         </ul>
     </div>
     </section>
 
     <!--Діяльність-->
+
+
     <section class="section">
         <div class="section__activity activity container">
         <h2 class="activity__title">Чем мы занимаемся</h2>
@@ -403,7 +405,7 @@
     <footer class="footer">
         <div class="footer__wrap--general container">
 
-        <div class="footer-contacts">
+        <div class="footer-contacts container">
             <a href=".index.html" class="footer-contacts__logo-footer"> <span class="logo-accent">Web</span>Studio</a>
         <address class="address-city">
             <a href="https://goo.gl/maps/Y9RydLLw3SXS2AKa6" class="address-city__address">г. Киев, пр-т Леси Украинки, 26</a>
@@ -417,7 +419,7 @@
 
         <div class="footer__social footer-social-box container">
             <h3 class="footer-title">присоединяйтесь</h3>
-            <!-- <div class="footer-social-wrap"> -->
+            
             <ul class="footer-social-list list">
                 <li class="footer-social-list__item">
                      <a href="" class="footer-social-list__link">
@@ -452,21 +454,21 @@
                     </a>
                 </li>
             </ul>
-        <!-- </div> -->
+      
     </div>
     <div class="footer__subscribe-box container">
         <h3 class="footer-title">подпишитесь на рассылку</h3>
         <div class="subscribe-wrap">
         
             <input type="email" class="subscribe-wrap__mail-input" placeholder="E-mail" >
-            <!-- <div class="footer-right-wrap"> -->
+          
             <button type="button" class="btn-footer" >Подписаться
             <svg class="btn-footer__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon_send">
                 </use>
             </svg>  
             </button>
-            <!-- </div> -->
+            
         </div>
     </div>
     </div>

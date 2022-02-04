@@ -1,3 +1,9 @@
+.activity {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .activity__title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -6,7 +12,6 @@
   text-align: center;
 }
 .section__activity > .activity__list {
-  margin-right: 30px;
   display: flex;
   justify-content: space-between;
 }
