@@ -1,9 +1,10 @@
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 480px) {
     padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
     padding-bottom: 94px;
   }
 }
@@ -24,10 +25,16 @@
 /* .activity .list {
   display: flex;
 } */
-.section > .activity {
-  padding-bottom: 60px;
+// .section > .activity {
+//   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     padding-bottom: 94px;
+//   }
+// }
+
+// .section > .activity {
+//   @media screen and (min-width: 1200px) {
+//     padding-bottom: 94px;
+//   }
+// }
