@@ -15,12 +15,12 @@
 <body>
     
     <header class="page-header">
-        <div class="header container">
+        <div class="header">
             <nav class="navigation">
                 <a href="./index.html" class="logo"> <span class="logo-accent">Web</span>Studio</a>
     
               
-<div class="menu-container js-menu-container" id="mobile-menu"></div>
+<!-- <div class="menu-container js-menu-container" id="mobile-menu"></div> -->
     <ul class="site-nav list">
     <li class="header-link"><a href="" class="nav-link link current">Студия</a></li>
     <li class="header-link"> <a href="./portfolio.html" class="nav-link link">Портфолио</a></li>
@@ -50,7 +50,7 @@
 
 
 <button type="button" class="menu-open-btn" data-menu-open>
-    <svg class="menu-open-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false"
+    <svg class="menu-open-btn__icon" width="24" height="16" aria-label="Переключатель мобильного меню" aria-expanded="false"
         aria-controls="mobile-menu">
         <use class="icon-menu" href="./images/icons.svg#icon-menu-mob"></use>
 </svg> </button>
@@ -58,7 +58,7 @@
 
  </div>
 
- <div class="mob-menu" data-menu>
+ <div class="mob-menu is-hidden" data-menu>
 
     <div class="container">
 
@@ -129,16 +129,17 @@
     </header>
 
 <main>
+
 <!-- HERO -->
 
 
-    <!-- <section class="hero">
+    <section class="hero">
         <div class="hero__wrap container">
         <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
                 <button type="button" class="hero__button" data-modal-open>Заказать услугу</button> 
    
             </div>  
-    </section> -->
+    </section>
         
 
     <!--Особливості-->
@@ -198,17 +199,36 @@
         <ul class="activity__list list">
            <div class="activity__photo-thumb">
             <li class="activity__photo">
-             <img class="activity__image no-gap" src="./images/img.png" alt="Фото планшета с клавиатурой" width="370"></li>           
-            <p class="activity__description">Десктопные приложения</p>
+
+<picture>
+    <source srcset="./images/img.jpg 1x,
+                ./images/img-desk-2x.jpg 2x" media="(min-width: 1200px)">
+
+        <img class="team-card__photo no-gap" 
+        src="./images/img.jpg" alt="Фото планшета с клавиатурой">
+</picture>
+
+                   <p class="activity__description">Десктопные приложения</p>
             </div>
             <div class="activity__photo-thumb">
             <li class="activity__photo">
-             <img class="activity__image no-gap" src="./images/planshet.png" alt="Фото планшета" width="370"></li>
+                <picture>
+                    <source srcset="./images/planshet.jpg 1x,
+                                ./images/planshet-desk-2x.jpg 2x" media="(min-width: 1200px)">
+                
+                    <img class="team-card__photo no-gap" 
+                    src="./images/planshet.jpg" alt="Фото планшета">
+                </picture>
             <p class="activity__description">Мобильные приложения</p>
             </div>
             <div class="activity__photo-thumb">
             <li class="activity-photo">
-             <img class="activity__image no-gap" src="./images/nout.png" alt="Фото ноутбука" width="370"></li>  
+<picture>
+    <source srcset="./images/nout.jpg 1x,
+                    ./images/nout-desk-2x.jpg 2x" media="(min-width: 1200px)">
+
+    <img class="team-card__photo no-gap" src="./images/nout.jpg" alt="Фото ноутбука">
+</picture>
         <p class="activity__description">Дизайнерские решения</p>
             </div>
     </ul>
@@ -225,8 +245,29 @@
            
             <li class="team-card__list">
                 <div>
-                <img class="team-card__photo no-gap" src="./images/igor.jpg" alt="Фото Игоря" width="270" height="260">
-               <div class="team-card__content">
+
+<picture>
+    <source srcset="./images/igor.jpg 1x,
+                ./images/igor-desk-2x.jpg 2x"
+                media="(min-width: 1200px)"
+                >
+
+    <source srcset="./images/igor-tab-1x.jpg 1x,
+                ./images/igor-tab-2x.jpg 2x"
+                media="(min-width: 768px)" 
+                >
+    <source srcset="./images/igor-mob-1x.jpg 1x,
+                ./images/igor-mob-2x.jpg 2x"
+                 media="(min-width: 480px)" 
+                 >
+
+                <img class="team-card__photo no-gap" 
+                src="./images/igor.jpg" 
+                alt="Фото Игоря" 
+                >
+</picture>
+
+                             <div class="team-card__content">
                    <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__possition"> <span lang="en">Product Designer</span> </p>
                 <ul class="team-social list">
@@ -268,9 +309,24 @@
         </li>
             <li class="team-card__list">
                <div>
-                <img class="team-card__photo no-gap" src="./images/olga.jpg" alt="Фото Ольги" width="270" height="260">
-               
-                <div class="team-card__content">
+<picture>
+    <source srcset="./images/olga.jpg 1x,
+                ./images/olga-desk-2x.jpg 2x"
+                 media="(min-width: 1200px)">
+
+    <source srcset="./images/olga-tab-1x.jpg 1x,
+                ./images/olga-tab-2x.jpg 2x" 
+                media="(min-width: 768px)">
+    <source srcset="./images/olga-mob-1x.jpg 1x,
+                ./images/olga-mob-2x.jpg 2x" 
+                media="(min-width: 480px)">
+
+    <img class="team-card__photo no-gap" 
+    src="./images/olga.jpg" 
+    alt="Фото Ольги">
+</picture>
+
+                              <div class="team-card__content">
                     <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__possition"> <span lang="en">Frontend Developer</span> </p>
             <ul class="team-social list">
@@ -312,8 +368,25 @@
         </li>
             <li class="team-card__list">
                 <div>
-                <img class="team-card__photo no-gap" src="./images/nicolay.jpg" alt="Фото Николая" width="270" height="260">
-                <div class="team-card__content">
+
+<picture>
+    <source srcset="./images/nicolay.jpg 1x,
+                ./images/nicolay-desk-2x.jpg 2x" 
+                media="(min-width: 1200px)">
+
+    <source srcset="./images/nicolay-tab-1x.jpg 1x,
+                ./images/nicolay-tab-2x.jpg 2x" 
+                media="(min-width: 768px)">
+    <source srcset="./images/nicolay-mob-1x.jpg 1x,
+                ./images/nicolay-mob-2x.jpg 2x" 
+                media="(min-width: 480px)">
+
+    <img class="team-card__photo no-gap" 
+    src="./images/nicolay.jpg" 
+    alt="Фото Николая">
+</picture>
+
+                                <div class="team-card__content">
                     <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__possition"> <span lang="en">Marketing</span> </p>
             <ul class="team-social list">
@@ -355,8 +428,23 @@
         </li>
             <li class="team-card__list">
                 <div>
-                <img class="team-card__photo no-gap" src="./images/mihail.jpg" alt="Фото Михаила" width="270" height="260">
-                <div class="team-card__content">
+<picture>
+    <source srcset="./images/mihail.jpg 1x,
+                ./images/mihail-desk-2x.jpg 2x" 
+                media="(min-width: 1200px)">
+
+    <source srcset="./images/mihail-tab-1x.jpg 1x,
+                ./images/mihail-tab-2x.jpg 2x"
+                 media="(min-width: 768px)">
+    <source srcset="./images/mihail-mob-1x.jpg 1x,
+                ./images/mihail-mob-2x.jpg 2x" 
+                media="(min-width: 480px)">
+
+    <img class="team-card__photo no-gap" 
+    src="./images/mihail.jpg" 
+    alt="Фото Михаила">
+</picture>
+                                <div class="team-card__content">
                     <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__possition"> <span lang="en">UI Designer</span> </p>
             <ul class="team-social list">

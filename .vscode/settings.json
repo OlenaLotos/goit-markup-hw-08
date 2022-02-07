@@ -22,7 +22,7 @@
     ".vscode/**"
   ],
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": [
+  "liveSassCompile.settings.autoprefix": null [
     "> 1%",
     "last 2 versions"
   ]

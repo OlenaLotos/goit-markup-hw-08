@@ -30,7 +30,22 @@
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
 }
+
+.btn-portfolio {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 .btn-portfolio:not(:last-child) {
   margin-right: 8px;
 }
