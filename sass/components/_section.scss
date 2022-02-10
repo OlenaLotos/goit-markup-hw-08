@@ -1,12 +1,51 @@
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
+.section__features {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
+
+.section__activity {
+  padding-bottom: 94px;
+}
+
+.team-bg {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-portfolio {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-title {
   color: var(--primary-text-color);
   font-weight: bold;
@@ -24,16 +63,3 @@
 /* .activity .list {
   display: flex;
 } */
-// .section > .activity {
-//   padding-bottom: 60px;
-
-//   @media screen and (min-width: 1200px) {
-//     padding-bottom: 94px;
-//   }
-// }
-
-// .section > .activity {
-//   @media screen and (min-width: 1200px) {
-//     padding-bottom: 94px;
-//   }
-// }
